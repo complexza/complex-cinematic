@@ -1,7 +1,6 @@
 local Freecam = exports['fivem-freecam']
 local lastPosition = nil
 local controlsShown = false
-local camPosition = vec3(0.0, 0.0, 0.0)
 
 -- Functions
 local function showControls()
@@ -68,19 +67,15 @@ end)
 
 CreateThread(function()
     while true do
-        if Freecam:IsActive() then
-            if IsDisabledControlJustPressed(0, 167) then
-                controlsShown = not controlsShown
-                if controlsShown then
-                    showControls()
-                else
-                    hideControls()
-                end
+        if Freecam:IsActive() and IsDisabledControlJustPressed(0, 167) then
+            controlsShown = not controlsShown
+            if controlsShown then
+                showControls()
+            else
+                hideControls()
             end
-            Wait(10)
-        else
-            Wait(250)
         end
+        Wait(10)
     end
 end)
 
