@@ -11,6 +11,7 @@ local function showControls()
         'Cinematic Cam Active  \n',
         'Move Around: [WASD]  \n',
         'Up & Down: [Q] & [E]  \n',
+        'Slow Mode: [Left Alt]  \n',
         'Show / Hide Controls: [F6]  \n',
         'Exit Cinematic Cam: [F5]'
     }
