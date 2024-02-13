@@ -8,6 +8,7 @@
 -- Added Soon
 
 ## Description
+This was just laying around on my pc, thought I would post it here :)
 A simple Cinematic Cam using fivem-freecam..
 Check the config for simple settings.
 
@@ -19,9 +20,9 @@ Check the config for simple settings.
 * F6 - Hide and Show Controls
 * F5 - Disable Cinematic Cam
 
-## Updates for later maybe
+## Updates for near future
 * More Optimizations.
-* Anti FailRP Exploit Checks
+* Anti-FailRP Exploit Checks
 * Actual Screen Effects using UI
 * Cinematic Bars with Svelte
 * More Configuration
