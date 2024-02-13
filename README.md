@@ -5,10 +5,10 @@
 * [fivem-freecam](https://github.com/Deltanic/fivem-freecam)
 
 ## Preview
--- Added Soon
+https://github.com/complexza/complex-cinematic/assets/74205343/dc2fd0f8-5922-45f1-b762-091f57aceb54
 
 ## Description
-This was just laying around on my pc, thought I would post it here :)
+This was just laying around on my PC, thought I would post it here :)
 A simple Cinematic Cam using fivem-freecam..
 Check the config for simple settings.
 
@@ -20,7 +20,7 @@ Check the config for simple settings.
 * F6 - Hide and Show Controls
 * F5 - Disable Cinematic Cam
 
-## Updates for near future
+## Updates for the near future
 * More Optimizations.
 * Anti-FailRP Exploit Checks
 * Actual Screen Effects using UI
