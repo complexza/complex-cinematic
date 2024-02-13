@@ -21,6 +21,7 @@ Check the config for simple settings.
 
 ## Updates for later maybe
 * More Optimizations.
+* Anti FailRP Exploit Checks
 * Actual Screen Effects using UI
 * Cinematic Bars with Svelte
 * More Configuration
