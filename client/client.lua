@@ -85,11 +85,13 @@ RegisterNetEvent('complex-cinematic:startCinematic', function()
     if isFreeCamActive then
         lib.notify({
             title = 'Cinematic Cam',
-            description = 'Cam Disabled!',
+            description = 'Cam Disabled & VOIP Enabled',
             type = 'warning'
         })
         Freecam:SetActive(false)
         hideControls()
+        TriggerServerEvent('complex-cinematic:sendLog', false)
+        NetworkSetVoiceActive(true)
         return
     end
 
@@ -98,10 +100,19 @@ RegisterNetEvent('complex-cinematic:startCinematic', function()
     Freecam:SetActive(true)
     Freecam:SetCameraSetting('ENABLE_EASING', Config.EnableEasing)
     Freecam:SetCameraSetting('EASING_DURATION', Config.EnableDuration)
-
     Freecam:SetKeyboardSetting('LOOK_SENSITIVITY_X', 5)
     Freecam:SetKeyboardSetting('LOOK_SENSITIVITY_Y', 5)
     Freecam:SetKeyboardSetting('BASE_MOVE_MULTIPLIER', 0.5)
+
+    NetworkSetVoiceActive(false)
+
+    lib.notify({
+        title = 'Cinematic Cam',
+        description = 'Cam Active & VOIP Disabled',
+        type = 'warning'
+    })
+
+    TriggerServerEvent('complex-cinematic:sendLog', true)
 
     if not controlsShown then
         showControls()

@@ -12,3 +12,7 @@ end
 Config.MaxDistance = 35.0 -- Max Distance Player Can Move Away from their Ped
 Config.EnableEasing = true -- Default = true
 Config.EnableDuration = 1000 -- Default = 1000
+
+--- Logging System 
+Config.Logs = true
+Config.LogSystem = 'ox' -- 'ox' or custom
