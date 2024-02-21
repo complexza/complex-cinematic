@@ -8,9 +8,11 @@
 https://github.com/complexza/complex-cinematic/assets/74205343/dc2fd0f8-5922-45f1-b762-091f57aceb54
 
 ## Description
-This was just laying around on my PC, thought I would post it here :)
+This was just on my PC, thought I would post it here :)
 A simple Cinematic Cam using fivem-freecam..
 Check the config for simple settings.
+This script uses ox logger for the logs, but there is the option for custom logs :) Check `server/main.lua`
+This also disabled the player's VoIP for native mumble when using the camera!
 
 ## Default Controls
 * WASD - General Movement
