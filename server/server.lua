@@ -18,6 +18,9 @@ local function sendLog(state, playerName)
 end
 
 RegisterNetEvent('complex-cinematic:sendLog', function(state)
+    if not Config.Logs then
+        return
+    end
     local src = source
     local playerName = GetPlayerName(src)
     sendLog(state, playerName)
