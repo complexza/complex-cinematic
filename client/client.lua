@@ -50,13 +50,15 @@ CreateThread(function()
             end
 
             if IsDisabledControlJustPressed(0, 166) then
-                Freecam:SetActive(false)
                 lib.notify({
                     title = 'Cinematic Cam',
-                    description = 'Cam Disabled!',
+                    description = 'Cam Disabled & VOIP Enabled',
                     type = 'warning'
                 })
+                Freecam:SetActive(false)
                 hideControls()
+                TriggerServerEvent('complex-cinematic:sendLog', false)
+                NetworkSetVoiceActive(true)
             end
             Wait(10)
         else
