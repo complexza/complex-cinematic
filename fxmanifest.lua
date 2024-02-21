@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 author 'complexza'
 description 'Easy Cinematic Freecam'
-version '1.0'
+version '1.2'
 
 client_script {
     'client/*.lua'
